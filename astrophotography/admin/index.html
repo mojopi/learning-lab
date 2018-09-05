@@ -1,0 +1,73 @@
+---
+---
+
+<!doctype html>
+<html>
+
+<head>
+    <!-- http://s3-us-west-2.amazonaws.com/healey/ourbodies/imgs -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Our Data, Ourselves Admin Links</title>
+    <link rel="stylesheet" href="{{site.revealurl}}/css/reveal.css">
+    <link rel="stylesheet" href="{{site.revealurl}}/css/theme/simple.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="{{site.revealurl}}/lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '{{site.revealurl}}/css/print/pdf.css' : '{{site.revealurl}}/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+
+    {% include backtohome.html %}
+
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>8th Grade Invisible Forces Admin Links</h2>
+                <hr>
+                <ul>
+                    <li><a href="../">Slides</a></li>
+                    <li><a href="https://drive.google.com/open?id=1-OCX40Z4SmRm5iyjfxnYMEK7NuVAaOwIlDimhk0NWac">Daily Plan</a></li>
+                    <li><a href="https://drive.google.com/open?id=1imAN69aX4r5r-4OlEFcjznbKQmi09GzmumZzGXW2fG8">Evaluation Report</a></li> 
+                    <li>Student Survey Results <a href="https://docs.google.com/spreadsheets/d/1HBgTNNSROlcoQbKwEc5US9sO3SJoKmf5WaYnNvFGMKY/edit#gid=0">#1</a> & <a href="https://docs.google.com/spreadsheets/d/1HBgTNNSROlcoQbKwEc5US9sO3SJoKmf5WaYnNvFGMKY/edit#gid=949803080">#2</a></li>
+                    <li><a href="https://drive.google.com/open?id=0Bxz2SqF7oN4vYUFzaDREdUlqVVU">Student Project Letters</a></li> 
+                    <li><a href="./projects">Final Projects</a></li>
+                    <li><a href="https://drive.google.com/open?id=0Bxz2SqF7oN4vb2xYbGE0Mm1aa3c">Drive Folder</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="{{site.revealurl}}/lib/js/head.min.js"></script>
+    <script src="{{site.revealurl}}/js/reveal.js"></script>
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: '{{site.revealurl}}/plugin/markdown/marked.js'
+        }, {
+            src: '{{site.revealurl}}/plugin/markdown/markdown.js'
+        }, {
+            src: '{{site.revealurl}}/plugin/notes/notes.js',
+            async: true
+        }, {
+            src: '{{site.revealurl}}/plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+    </script>
+</body>
+
+</html>

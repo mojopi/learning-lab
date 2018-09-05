@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<style>
+.avatar:nth-child(even) {
+  background-color:rgba(0,0,0,.15);
+}
+
+.avatar:nth-child(odd) {
+  background-color:rgba(50,50,50,.1);
+}
+
+.avatar {
+  position:relative;
+  height:75px;
+  width:32%;
+  margin:1px;
+  border:1px solid black;
+  display:inline-block;
+  box-shadow:inset 0px 0px 5px black;
+  border-radius: 5px;
+}
+
+.avatar span {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  color:black;
+  text-align:center;
+  font-size:40px;
+  padding:10px;
+}
+
+.portfolio-listing {
+  text-align:center;
+  padding-bottom:2em;
+}
+.grade-level {
+  font-size:4em;
+  font-family:Courier;
+}
+.grade-level:hover {
+  text-decoration:none;
+}
+</style>
+
+<p style="font-size:2.3em;">On this page, you will find documentation of the work done by students during the 2016-2017 STEAM programs at the Healey organized by each person. When you click on someone's name, you will find a collaction of images, videos, slideshows, and other media capturing the work they did. If you have any questions, or find anything missing, please <a href="mailto:team@thesprouts.org">let us know</a>!</p>
+<div class="portfolio-listing">
+<hr>
+<a class="grade-level" href="#portfolio-seventh">7th Grade Portfolio</a>
+<br>
+<a class="grade-level" href="#portfolio-eighth">8th Grade Portfolio</a>
+<hr>
+</div>
+
+
+<h1 id="portfolio-seventh">7th Grade Projects</h1>
+<p>You can check out documentation of some of our projects from this year below. We've got pictures of things we built, animations, films, rap battles, music videos, thermal images, kinetic sculptures, computer programs, electronics, and a bunch more. Take a look around and enjoy!</p>
+
+<div class="home">
+    <h1 class="page-heading"></h1>
+    <ul class="avatar-listing">
+        {% for person in site.portfolio-seventh %}
+        <div class="avatar">
+            <a href="{{site.baseurl}}{{ person.url }}">
+                <span>{{ person.full-name }}</span>
+            </a>
+        </div>
+        {% endfor %}
+    </ul>
+</div>
+
+<h1 id="portfolio-eighth">8th Grade Projects</h1>
+<p>You can check out documentation of some of our projects from this year below. We've got pictures of things we built, animations, films, rap battles, music videos, thermal images, kinetic sculptures, computer programs, electronics, and a bunch more. Take a look around and enjoy!</p>
+
+<div class="home">
+    <h1 class="page-heading"></h1>
+    <ul class="avatar-listing">
+        {% for person in site.portfolio-eighth %}
+        <div class="avatar">
+            <a href="{{site.baseurl}}{{ person.url }}">
+                <span>{{ person.full-name }}</span>
+            </a>
+        </div>
+        {% endfor %}
+    </ul>
+</div>

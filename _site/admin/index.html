@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- http://s3-us-west-2.amazonaws.com/healey/ourbodies/imgs -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Healey Report</title>
+    <link rel="stylesheet" href="../reveal/css/reveal.css">
+    <link rel="stylesheet" href="../reveal/css/theme/beige.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <style>
+        .left {
+            float:left;
+            width:48%;
+        }
+        .right {
+            float:right;
+            width:48%;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+.home-button {
+	position:fixed;
+	top:20px;
+	left:20px;
+	z-index:100;
+}
+.home-button img {
+	height:30px;
+	width:30px;
+}
+
+</style>
+<div class="home-button">
+<a href="/learning-lab/"><img src="/learning-lab//imgs/home.png"></a>
+</div>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h3>STEAM @ Healey Final Reports & Materials</h3>
+                <hr>
+                <div class="left">
+                    <p>The materials created for each program include:</p>
+                    <ol style="font-size:18px;">
+                        <li><i>Slides</i>: the slide decks we used during the program</li>
+                        <li><i>Daily Plan</i>: a description of the activities we did each day of the program including links to any resources we shared with students for activities, brainstorming, etc.</li>
+                        <li><i>Program in Review</i>: a report written up incorporating reflections staff, students, and us</li>
+                        <li><i>Student Survey Results</i>: the quantified results of post-program surveys administered to students including average ratings and short answer responses</li>
+                        <li><i>Student Project Letters</i>: the letters we wrote to, and sometimes from students, during the more self-directed weeks of the programs, offering suggested resources and next steps</li>
+                        <li><i>Final Projects</i>: a link to wherever the documentation of final projects lives</li>
+                        <li><i>Drive Folder</i>: the folder where we collected—and organized—most of the miscellaneous media generated during a programs</li>
+                    </ol>
+                </div>
+                <div class="right">
+                    <p>You can find materials for each program here:</p>
+                    <ol style="font-size:.9em;">
+                        <li><a href="../machines/admin">Moving Machines</a></li>
+                        <li><a href="../sustainability/admin">Sustainability Fair</a></li>
+                        <li><a href="../ourdata/admin">Our Data, Ourselves</a></li>
+                        <li><a href="../invisible/admin">Invisible Forces, 8th Grade</a></li>
+                        <li><a href="../invisible2/admin">Invisible Forces, 7th Grade</a></li>
+                        <li><a href="../ai/admin">Signs of Life</a></li>
+                        <li><a href="../twovoices/admin">Two Voices</a></li>
+                        <li><a href="../adaptations/admin">Adaptations</a></li>
+                        <li><a href="../presentations/admin">Presentations</a></li>
+                        <li><a href="../pd">STEAM PD Materials</a>
+                    </ol>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../reveal/lib/js/head.min.js"></script>
+    <script src="../reveal/js/reveal.js"></script>
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: '../reveal/plugin/markdown/marked.js'
+        }, {
+            src: '../reveal/plugin/markdown/markdown.js'
+        }, {
+            src: '../reveal/plugin/notes/notes.js',
+            async: true
+        }, {
+            src: '../reveal/plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+    </script>
+</body>
+
+</html>

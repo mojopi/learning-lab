@@ -1,0 +1,90 @@
+--- ---
+<!doctype html>
+<html>
+
+<head>
+    <!-- http://s3-us-west-2.amazonaws.com/healey/ourbodies/imgs -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Found Sound</title>
+    <link rel="stylesheet" href="{{site.revealurl}}/css/reveal.css">
+    <link rel="stylesheet" href="{{site.revealurl}}/css/theme/sky.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="{{site.revealurl}}/lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '{{site.revealurl}}/css/print/pdf.css' : '{{site.revealurl}}/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style>
+    .left {
+        float: left;
+        width: 48%;
+    }
+
+    .right {
+        float: right;
+        width: 48%;
+    }
+    </style>
+</head>
+
+<body>
+    {% include backtohome.html %}
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Found Sound</h1>
+                <hr>
+                <h3>Links to Summary Documents</h3>
+                <div style="text-align:left;">
+                    <li>Research Agenda</li>
+                    <li>Summaries of Different Programs</li>
+                </div>
+            </section>
+            <section>
+                <h2>Summary Video</h2>
+                <hr>
+                <ul>
+                    <li>Origin Story: Story of how started doing found sound, what doing found sound with young people has actually looked like, how it has changed the teachers doing it.</li>
+                    <li>Stories of personal transformation: Young people talking about their experiences</li>
+                    <li>Meta talk: Why and how it can work to engage young people, why folks who aren't thriving in school, fall in love with it, what deep ideas it puts YP in contact with.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Current Projects</h2>
+            </section>
+            <section>
+                <h2>Young People's Stories</h2></section>
+        </div>
+    </div>
+    <script src="{{site.revealurl}}/lib/js/head.min.js"></script>
+    <script src="{{site.revealurl}}/js/reveal.js"></script>
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: '{{site.revealurl}}/plugin/markdown/marked.js'
+        }, {
+            src: '{{site.revealurl}}/plugin/markdown/markdown.js'
+        }, {
+            src: '{{site.revealurl}}/plugin/notes/notes.js',
+            async: true
+        }, {
+            src: '{{site.revealurl}}/plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+    </script>
+</body>
+
+</html>

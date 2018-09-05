@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <style>
+
+
+        body {
+        background-color: #00BFFF;
+    }
+    
+    #titlebar {
+        font-size: 100px;
+        font-family: 'lobster', cursive;
+        text-align: center;
+        color: #ff3300;
+    }
+    
+    @keyframes swim {
+        0% {
+            transform: rotate(0deg);
+        }
+        20% {
+            transform: rotate(10deg);
+        }
+        40% {
+            transform: rotate(0deg);
+        }
+        60% {
+            transform: rotate(-10deg);
+        }
+        60% {
+            transform: rotate(10deg);
+        }
+        80% {
+            transform: rotate(0deg);
+        }
+        90% {
+            transform: rotate(-10deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="titlebar">Digital Zoo</div>
+    <script>
+    function makeEye(submarine) {
+        var eye = document.createElement('img');
+        submarine.appendChild(eye);
+        eye.src = "eye3.gif";
+        eye.style.height = "55px";
+        eye.style.width = "77px";
+        eye.style.backgroundRepeat = "no-repeat";
+        eye.style.backgroundSize = "cover"
+        eye.style.position = "absolute";
+        eye.style.left = "36px";
+        eye.style.top = "24px";
+        eye.style.borderRadius = "50%";
+        eye.style.filter = "invert(90%)";
+    }
+
+    var windowCounter = 0;
+
+    function makeMyWindow(interior, n) {
+    windowCounter = windowCounter + 1;
+
+        var link = document.createElement('a');
+        interior.appendChild(link);
+        link.setAttribute('id', "link" + windowCounter);
+        var myWindow = document.createElement("div");
+        link.appendChild(myWindow);
+
+
+        link.appendChild(myWindow);
+        myWindow.className = "myWindow";
+        myWindow.setAttribute('id', "myWindow" + windowCounter);
+        myWindow.style.backgroundColor = "grey";
+        myWindow.style.width = "70px";
+        myWindow.style.height = "70px";
+        myWindow.style.borderRadius = "100%";
+        myWindow.style.position = "relative";
+        myWindow.style.display = "inline-block";
+        myWindow.style.marginLeft = "10px";
+        myWindow.style.marginTop = "5px";
+        myWindow.style.opacity = ".8";
+    }
+
+    function makeSubmarine(n) {
+        var submarine = document.createElement("div");
+        document.body.appendChild(submarine);
+
+
+        var interior = document.createElement('div');
+        submarine.appendChild(interior);
+        interior.style.position = "relative";
+        interior.style.width = "250px";
+        interior.style.height = "80px";
+        interior.style.backgroundColor = "red";
+        interior.style.left = "100px";
+        interior.style.top = "220px";
+        interior.style.borderRadius = "10%";
+
+        submarine.style.animationName = "swim";
+        submarine.style.top = Math.floor(Math.random()*200) + "px";
+         submarine.style.left = Math.floor(Math.random()*200) + "px";
+        submarine.style.animationDuration = "5s";
+        submarine.style.animationIterationCount = "infinite";
+        submarine.style.height = "400px";
+        submarine.style.width = "500px";
+        submarine.style.position = 'relative';
+        submarine.style.backgroundImage = "url(submarine.png)";
+        submarine.style.backgroundRepeat = "no-repeat";
+        submarine.style.backgroundSize = "contain";
+        submarine.setAttribute("id", "submarine-" + n);
+        submarine.style.display = "inline-block";
+        submarine.style.filter = "hue-rotate(" + Math.floor(Math.random() * 360) + "deg)";
+        // submarine.style.transform="rotate(" Math.Floor(Math.random()*200 + "deg)";
+
+        makeEye(submarine);
+
+        for (var i = 0; i < 3; i = i + 1) {
+            makeMyWindow(interior, i);
+        }
+    }
+
+    for (var j = 0; j < 5; j = j + 1) {
+        makeSubmarine(j)
+    }
+
+
+// submarine1
+
+    //////////////////////////////////////
+
+    var link1= document.getElementById("link1");
+    link1.href = "https://scratch.mit.edu/projects/16795490/";
+
+    var myWindow1 = document.getElementById("myWindow1");
+    myWindow1.style.backgroundImage = "url(whale.gif)";
+    myWindow1.style.backgroundSize = "contain";
+    myWindow1.style.backgroundRepeat = "no-repeat";
+
+        //////////////////////////////////////
+
+        var link1= document.getElementById("link1");
+    link1.href = "https://scratch.mit.edu/projects/16795490/";
+
+    var myWindow1 = document.getElementById("myWindow1");
+    myWindow1.style.backgroundImage = "url(whale.gif)";
+    myWindow1.style.backgroundSize = "contain";
+    myWindow1.style.backgroundRepeat = "no-repeat";
+
+    ////////////////////////////////////////////////
+
+    var link2= document.getElementById("link2");
+    link2.href = "https://scratch.mit.edu/projects/16795490/";
+
+    var myWindow2 = document.getElementById("myWindow2");
+    myWindow2.style.backgroundImage = "url(whale.gif)";
+    myWindow2.style.backgroundSize = "contain";
+    myWindow2.style.backgroundRepeat = "no-repeat";
+
+
+     //////////////////////////////////////
+
+    var link3= document.getElementById("link3");
+    link3.href = "https://scratch.mit.edu/projects/16795490/";
+
+    var myWindow3 = document.getElementById("myWindow3");
+    myWindow3.style.backgroundImage = "url(whale.gif)";
+    myWindow3.style.backgroundSize = "contain";
+    myWindow3.style.backgroundRepeat = "no-repeat";
+
+        //////////////////////////////////////
+
+// submarine2
+
+
+    var link4= document.getElementById("link4");
+    link4.href = "https://scratch.mit.edu/projects/16795490/";
+
+    var myWindow4 = document.getElementById("myWindow4");
+    myWindow4.style.backgroundImage = "url(cat-fish.gif)";
+    myWindow4.style.backgroundSize = "contain";
+    myWindow4.style.backgroundRepeat = "no-repeat";
+
+        //////////////////////////////////////
+
+    var link5= document.getElementById("link5");
+    link5.href = "https://scratch.mit.edu/projects/16795490/";
+
+    var myWindow5 = document.getElementById("myWindow5");
+    myWindow5.style.backgroundImage = "url(cat-fish.gif)";
+    myWindow5.style.backgroundSize = "contain";
+    myWindow5.style.backgroundRepeat = "no-repeat";
+
+        //////////////////////////////////////
+
+    var link6= document.getElementById("link5");
+    link6.href = "https://scratch.mit.edu/projects/16795490/";
+
+    var myWindow6 = document.getElementById("myWindow6");
+    myWindow6.style.backgroundImage = "url(cat-fish.gif)";
+    myWindow6.style.backgroundSize = "contain";
+    myWindow6.style.backgroundRepeat = "no-repeat";
+
+
+    </script>
+</body>
+
+</html>

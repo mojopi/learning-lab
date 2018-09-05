@@ -1,0 +1,46 @@
+<section>
+  <h2>{{page.full-name}}'s STEAM portfolio</h2>
+  <hr>
+  <p>Use the right arrow to view {{page.full-name}}'s work.</p>
+</section>
+
+{% for project in page.projects %}
+
+<section>
+  <h2>{{project.project-title}}</h2> 
+  <hr>
+  <h3>from {{project.program-title}}</h3>
+</section>
+
+  {% for doc in project.docs %}
+
+    {% if doc.img-url %}
+    <section data-background="{{doc.img-url}}" data-background-size="contain">
+      <h2 style="background:rgba(255,255,255,.5);color:black;">{{doc.caption}}</h2>
+    </section>
+
+    {% elsif doc.vid-url %}
+    <section data-background-video="{{doc.vid-url}}" data-background-size="contain">
+      <h2 style="background:rgba(255,255,255,.5);color:black;">{{doc.caption}}</h2>
+    </section>
+
+    {% elsif doc.embed and doc.audio-url %}
+    <section>
+      <h2>{{doc.caption}}</h2>
+      {{doc.embed}}
+      <audio width="960" src="{{doc.audio-url}}" controls></audio>
+      <br>
+      <small font-family="monospace">Listen to me tell my story here.</small>
+    </section>
+
+    {% elsif doc.embed %}
+    <section>
+      <h2>{{doc.caption}}</h2>
+      {{doc.embed}}
+    </section>
+
+    {% endif %}
+
+  {% endfor %}
+
+{% endfor %}

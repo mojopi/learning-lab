@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    body{
+    	background-image:url(underwater.png);
+    	background-repeat: no-repeat;
+    	background-size:cover;
+    }
+    #submarine-body {
+        width: 4000px;
+        height: 400px;
+        background-image:url(submarine.png);
+        background-size:contain;
+        background-repeat:none;
+/*        border-radius: 40%;
+*/        position: relative;
+        top: 100px;
+        left:100px;
+    }
+
+        #interior {
+        width: 3500px;
+        height: 200px;
+        position: absolute;
+        top: 100px;
+        left:300px;
+/*        background-color:white; 
+*/    }
+
+    #line{
+    	height:2px;
+    	width:4000px;
+    	background-color:grey;
+    	border-radius:20%;
+    	position:absolute;
+    	margin-top:240px;
+    }
+
+    #sub-top {
+    	position: absolute;
+    	background-color:yellow;
+    	width:800px;
+    	left:-50px;
+    	height:300px;
+    	top:-20px;
+    	transform:rotate(-10deg);
+    	border-radius: 50%;
+
+    }
+    </style>
+</head>
+
+<body>
+    <div id="submarine-body">
+    <div id="sub-top"></div>
+
+    <div id="line">
+    </div>
+
+    <div id="interior"></div>
+
+    </div>
+
+
+
+    <script>
+    var interior = document.getElementById("interior");
+
+    function makeMyWindow() {
+        var myWindow = document.createElement('div');
+        myWindow.className = "myWindow";
+        myWindow.style.backgroundColor = "grey";
+        myWindow.style.width = "80px";
+        myWindow.style.height = "80px";
+        myWindow.style.borderRadius = "100%";
+        myWindow.style.position = "relative";
+        myWindow.style.display = "inline-block";
+        myWindow.style.marginLeft = "30px";
+        myWindow.style.marginTop = "50px";
+        myWindow.style.borderWidth="3px";
+        myWindow.style.borderStyle="solid";
+        myWindow.style.borderColor="black";
+        myWindow.style.opacity=".8";
+        interior.appendChild(myWindow);
+
+    }
+
+
+    for (i = 0; i < 30; i = i + 1) {
+        makeMyWindow()
+    }
+    </script>
+</body>
+
+</html>

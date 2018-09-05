@@ -1,0 +1,86 @@
+--- 
+---
+<!doctype html>
+<html>
+
+<head>
+    <!-- http://s3-us-west-2.amazonaws.com/healey/ourbodies/imgs -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Math</title>
+    <link rel="stylesheet" href="../reveal/css/reveal.css">
+    <link rel="stylesheet" href="../reveal/css/theme/serif.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    {% include backtohome.html %}
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Big Idea Math</h1>
+                <hr>
+                <h3>Links to Summary Documents</h3>
+                <div style="text-align:left;">
+                <li>Research Agenda</li>
+                <li>Summaries of Different Programs</li>
+            </div>
+            </section>
+        
+    
+            <section>
+                <h2>Summary Video</h2>
+                <hr>
+                <ul>
+                    <li>Origin Story: Story of how started doing big idea math, what doing rockets with young people has actually looked like, how it has changed the young people and adults doing it.</li>
+                    <li>Stories of personal transformation: Young people talking about their experiences</li>
+                    <li>Meta talk: Why and how it can work to engage young people, why folks who aren't thriving in school, fall in love with it, what deep ideas it puts YP in contact with.</li>
+                </ul>
+            </section>
+            <section>
+                <section>
+                    <h2>Current Projects</h2>
+                </section>
+                <section><h3>Contemplating Infinite</h3></section>
+            </section>
+            </section>
+            <section>
+                <h2>Young People's Stories</h2></section>
+        </div>
+    </div>
+    <script src="../reveal/lib/js/head.min.js"></script>
+    <script src="../reveal/js/reveal.js"></script>
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: '../reveal/plugin/markdown/marked.js'
+        }, {
+            src: '../reveal/plugin/markdown/markdown.js'
+        }, {
+            src: '../reveal/plugin/notes/notes.js',
+            async: true
+        }, {
+            src: '../reveal/plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+    </script>
+</body>
+
+</html>

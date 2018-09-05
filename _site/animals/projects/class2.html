@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    @font-face {
+        font-family: "attach of the cucumbers";
+        src: url(./attackofthecucumbers.ttf) format("truetype");
+    }
+
+    html {
+        background-image: url("desktop2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .tape {
+        width: 100px;
+        height: 30px;
+        background-color: #F0FFFF;
+        opacity: 0.4;
+        position: relative;
+        left: 100px;
+        box-shadow: 0px 5px 5px #888888;
+        top: -10px;
+        z-index: 1;
+    }
+    
+    .image {
+        /*        background-image: url("matt2.gif");
+*/
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 280px;
+        height: 210px;
+        position: relative;
+        left: 10px;
+        top: -20px;
+    }
+    
+    .polaroid {
+        position: relative;
+        /* margin-top: 20px;
+        margin-left: 20px;*/
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+        border-radius: 2px;
+        padding: 4px;
+        background-color: #F8F8FF;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1)
+    }
+    
+    .name {
+        font-color: #101010;
+        width: 300px;
+        height: 20px;
+        background-color: #F8F8FF;
+        position: relative;
+        top: 0px;
+        text-align: center;
+        font-family: "attack of the cucumbers";
+        font-size: 30px;
+    }
+    
+    #titlebar {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-family: courier;
+        font-size: 80px;
+        text-align: center;
+        z-index: 20;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="titlebar">Invisible Forces & Us</div>
+    <script>
+    var individuals = [{
+            name: "No Calm",
+            image: "url(./gifs/ezra-andrew.gif)",
+            link: "https://www.youtube.com/watch?v=SBOYAZ8VZLw"
+        },
+
+        {
+            name: "Light Love",
+            image: "url(./gifs/stephanya-lexi-destiny.gif)",
+            link: "https://www.youtube.com/watch?v=AP-K8t1Sy3g",
+        },
+
+   {
+            name: "Juice-diction",
+            image: "url(./gifs/boris.gif)",
+            link: "https://www.youtube.com/watch?v=J0uGgDpdwy4",
+        },
+
+
+   {
+            name: "Good & Evil",
+            image: "url(./gifs/william.gif)",
+            link: "https://www.youtube.com/watch?v=7kjFixeJtVA",
+        },
+
+          {
+            name: "Greedy Man",
+            image: "url(./gifs/myles-dean.gif)",
+            link: "https://www.youtube.com/watch?v=GA5FUCkAQLM",
+        },
+
+
+        {
+            name: "Not Bad",
+            image: "url(./gifs/leslie.gif)",
+            link: "https://www.youtube.com/watch?v=x2qVxespV4w"
+        },
+
+        {
+            name: "Care-less",
+            image: "url(./gifs/joselyn-carina-idalia.gif)",
+            link: "https://www.youtube.com/watch?v=WwiJnmKU-K4",
+        },
+
+        {
+            name: "Get Mad",
+            image: "url(./gifs/jamir.gif)",
+            link: "https://www.youtube.com/watch?v=PgjunGmW4Iw",
+        },
+
+
+        {
+            name: "Evan",
+            image: "url(./gifs/evan.gif)",
+            link: "https://www.youtube.com/watch?v=VuQwpJYuXOg",
+        },
+
+
+
+
+      
+
+
+    ];
+
+
+    function makePolaroid(individual) {
+
+        var polaroid = document.createElement('div');
+        document.body.appendChild(polaroid);
+        polaroid.className = "polaroid";
+        polaroid.style.transform = "rotate(" + (Math.random() * 90 - 45) + "deg)";
+        polaroid.style.marginLeft = 100 + (Math.random() * 20 - 10) + "px";
+        polaroid.style.marginTop = 30 + (Math.random() * 20 - 10) + "px";
+
+
+
+        var tape = document.createElement("div");
+        polaroid.appendChild(tape);
+        tape.className = "tape";
+
+
+        var projectLink = document.createElement("a");
+        polaroid.appendChild(projectLink);
+        projectLink.setAttribute('href', individual.link);
+        projectLink.style.width = '500px';
+        projectLink.style.height = '500px';
+
+
+        var image = document.createElement("div");
+        projectLink.appendChild(image);
+        image.className = "image";
+        image.style.backgroundImage = individual.image;
+
+        // polaroid[].addEventListener("click", function(){
+        //     console.log("hi")});
+        // location.href = individuals.link;}
+
+
+
+        var name = document.createElement('div');
+        name.className = "name";
+        polaroid.appendChild(name);
+        name.innerText = individual.name;
+
+
+
+
+    };
+
+    individuals.forEach(makePolaroid);
+    </script>
+</body>
+
+</html>
