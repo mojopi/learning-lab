@@ -16,6 +16,45 @@ layout: default
 h2, h3{
 	color:black;
 }
+
+.collapsible {
+    background-color: rgb(220,220,220, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5em;
+}
+
+.active, .collapsible:hover {
+/*    background-color: #555;
+*/}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    color:#696969;
+    font-size:1.2em; 
+    border:1px dotted grey;
+
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+   color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 </style>
 
 <div class="feature-video">
@@ -23,13 +62,13 @@ h2, h3{
 </div> 
 
  <div class="feature-video">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RuvDHn4kPCw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   <iframe src="https://player.vimeo.com/video/295869498" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 <hr>
 
 <section>
-<div style="font-size:2.5em; padding:2%;"><p>
+<div style="font-size:2em; padding:2%;"><p>
 
  In the spring of 2018, High Tech High ran a semester-long, immersive program called Semester Upstream in which two long-time teachers, coaches, and club mentors, Brian Delgado and Mike Strong supported twenty-three high school students as they made a film about the mismanagement of the Colorado River. Kids started by reading and learning about the history of the river, making short films, and then they quickly dove in together to making a longer documentary.
 <br><br>For those involved, the experience changed their relationships to themselves, each other, and the environment. Here, we unearth what this program was, where its power came from, what made it work, and its impact on the people involved.
@@ -39,140 +78,148 @@ h2, h3{
 </section>
 
 <section>
-<!-- <div id="text-heading" style="top:0%;width:100%;height:40px;position:fixed;">Hello</div> -->	
+	
 
 <div style="width:100%; position:relative;">
-
-<!-- <div style="position:relative;height:100px; width:20px; background-color:red; left:0%; top:20%;">sedfsdfsdf</div> -->
-
- <div class style="position:absolute; color:#696969;font-size:2em; padding:2%;"><p>
-
-
-<h2>Where did Semester Upstream Come From?</h2>
+<button class="collapsible"><h2>Where did Semester Upstream Come From?</h2></button>
+<div class="content">
 <h3>Authentic Connections to the River</h3>
-Semester Upstream came from Brian Delgado and Mike Strong’s emotional connections to the Colorado River and their desires to protect it. 
+<p>Semester Upstream came from Brian Delgado and Mike Strong’s emotional connections to the Colorado River and their desires to protect it. 
 <br><br>
-Brian rock climbs along the river and spends time in the wild places that depend on its flow. He reveres the wildness of the river. Mike’s relationship to the river comes from his first-hand experience of how water management policies have harmed and continue to harm people he cares about. Mike grew up in Holtville, California, located in California’s Imperial Valley, where much of our food is grown. It’s agricultural and poor. 
+Brian rock climbs along the river and spends time in the wild places that depend on its flow. Mike’s relationship to the river comes from his first-hand experience of how water management policies have harmed and continue to harm people he cares about. He grew up in Holtville, California, located in California’s Imperial Valley, where much of our food is grown. It’s agricultural and poor. 
 <br><br>
 In Holtville, Mike saw the consequences of allocating more river water to cities like San Diego. The Salton Sea, a salt-water lake fed by agricultural runoff in Imperial Valley, depends on water from the Colorado river. It’s an important habitat for migrating birds. As less water reaches the sea, it evaporates faster than it’s being replenished. This exposes pesticide and salt-laden sea beds. Dust from the exposed earth is going into the air and making people sick. Imperial Valley has some of the highest pediatric asthma rates, and high rates of thyroid cancer. The management of the Colorado River is directly related to ways in which Mike’s community is being made sick.
 <br><br>
-TKInsert Mike Interview
-<br><br>
+<!-- TKInsert Mike Interview
+<br><br> -->
 In the spring of 2018, the passions of Brian and Mike turned into a program with twenty-three young people where they made a documentary film about the management of the Colorado River. It features policy makers, communities, and ecosystems along the river. As young people got to know the issues affecting the river, they began to really feel how the water coming out of their faucets was connected to environmental degradation and pediatric asthma rates in Imperial Valley. 
 <br>
 <br>
 In addition to getting to know the river and related issues, throughout the process of making a documentary film, each individual leveraged and grew skills that they cared about — skills around communications,  logistics, storytelling, photography, cinematography, and video editing.
 <br><br>
+</p>
+</div>
 
-<h2>What did Semester Upstream look and feel like?</h2>
+
+
+<button class="collapsible"><h2>What are some of the more obvious structural conditions  that allowed for Semester Upstream to work?</h2></button>
+
+<div class="content">
+<p>
+
 The conditions of Semester Upstream looked much less like school and much more like how creative work happens in the real world. Time was contiguous, ages were mixed, and young people were actually out in the world, interfacing and interviewing adult professionals. Unlike in school, logistics didn’t get in the way. Scheduling could be responsive to the project’s needs instead of the other way around. 
 <br><br>
 
 The conditions had to be different from school because the goal was was to make a professional-quality documentary film. The scope of such a project couldn’t fit into class periods and couldn’t be broken down by subject.
-<br>
-
+<br><br>
 In Semester Upstream, young people were expected to be autonomous, leading themselves in making things happen. Everything the project required, was taken seriously and considered legitimate and important work. Folks had different roles: logistics, film editing, drone videography, making the soundtrack, etc. Allowing for specialization, enabled different people to focus on activities that they really cared about. For many participants, this really changed how they think of themselves as creative professionals.
-<br>
-<h2>What are some of the more obvious structural conditions  that allowed for Semester Upstream to work?</h2>
-<br>
+<br><br>	
 Semester Upstream was, in part, made possible by the way in which school got out of the way of the kids. The people involved were liberated from schoolish structures and given more flexibility and autonomy over their time and attention. 
 <br>
-The Way Time was Managed (and not managed)
 <br>
-Autonomy to be flexible and responsive
+<h3>The Way Time was Managed (and not managed)</h3>
+<u>Autonomy to be flexible and responsive</u><br>
 During Semester Upstream, the schedule fit the project instead of the project fitting the schedule. Young people managed their own time, to do what they thought was best for the project. This allowed them to more effectively do technical work and to interface with professionals in the real world. 
-<br>
+<br><br>
 Since young people were in charge of managing their own time, they  were able to be responsive to opportunities that arose along the way (e.g. interviewing a state senator, visiting a fish farm, or getting time-lapse videos of particular sights at specific times).
-<br>
+<br><br>
 Autonomy over their time also meant that young people could organize immersive experiences that don’t fit within the daily schedule of school, such as week-long camping trips. They took trips to the upper and lower parts of the Colorado River and these trips gave them the chance to bond with each other, to get to know different parts of the river, and to get footage that they wouldn’t normally be able to get within the constraints of a school schedule.
-<br>
-Contiguity
-<br>
+<br><br>
+<u>Contiguity</u><br>
 Sometimes, especially if you’re a novice at something, it can take an hours just to figure out how to set up the equipment you need or to figure out what you need to work on that day. 
-
+<br><br>
 With access to contiguous time, young people really had the chance to take their time, to figure things out for themselves, and to make mistakes.
-
-Intensity, Immersion, and Downtime
-
+<br><br>
+<u>Intensity, Immersion, and Downtime</u><br>
 Throughout the process of making the film, the young people became very close. You’ll often seen them walking together in hallways or hanging out together during lunch. Based on conversations with them, it seems that their closeness emerged from the immersion and the intensity of the experiences they had together.
-
+<br><br>
 While some moments in Semester Upstream were particularly intense, the work unfolded like it does in the real world — in spurts punctuated by down time, which is quite different from the expectation in many classrooms where each moment is expected to be used productively. 
-
+<br><br>
 The combination of intense time working with downtime where they hung out with each other, was so important to young people because it gave them room to build friendships, to take social risks, and to really connect with folks outside their typical social circles. They drove many hours in a car together, cooked and ate dinner together on camping trips, and just played together on the banks of the river. This downtime gave them the chance to really get to know each other connect, which was very important for many students. 
-
+<br><br>
 Overall, it seemed that the combination of unstructured time punctuated by very intense moments of shooting and getting things done, bonded the group. Like a tight-knit sports team who plays together, has fun together on bus trips, and plays intense games together, the people in Semester Upstream really felt that they were on a team together, doing something bigger than themselves. They relied on each other, and they still do.
-
-TKInsert Avery
-
-Scale
+<br><br>
+<!-- TKInsert Avery
+<br><br> -->
+<h3>Scale</h3>
 The ratio of adults to teenagers in Semester Upstream was relatively small, compared to typical class sizes. There were two teachers and twenty-three students. The small size made it much easier to coordinate the work that needed to get done. It also allowed for much more individual attention — the adults were better able to get a sense of young people’s interest and to match-make them with activities which resonated with them. Logistically, it also made it possible for the group to design and arrange experiences (e.g. camping trips) that wouldn’t be possible with fifty people. On these trips is where they really got to know each other as individuals and develop tight-knit relationships.
-
-Age Integration
+<br><br>
+<h3>Age Integration</h3>
 Many of the young people talk about how much they enjoyed being in a mixed-age group. Being with people of different ages challenges the implication that everyone should be at the same developmental place at the same time. In Semester Upstream, there were some people who were eighteen and some who were fourteen. Some people were more experienced at life and at doing projects than others. The younger people in the group wanted to earn the older people’s respect and vice versa. Since they were new to each other—they hadn’t been together in the same classes—and since many of them felt like misfits in this new setting, they described that they developed an inclusive, supportive culture where people felt comfortable being themselves and making themselves vulnerable. The relationships they had looked more like what you see on a team or in a club. They were connected around a shared project and activity and weren’t “just” together because they were the same age.
+<br><br>
+</div>
 
+<button class="collapsible">
+<h2>What are some of the less visible qualities that made Semester Upstream successful as a context for human development and for the creation of great work?</h2>
+</button>
+<div class=content>
 
-What are some of the less visible qualities that made Semester Upstream successful as a context for human development and for the creation of great work?
-
-Realness
+<h3>Realness</h3>
 There’s no substitute for doing something that you feel is actually important and real, especially for teenagers who are very much eager to be part of the adult world.
+<br><br>
 
 After interviewing the program’s participants, it seems that a lot of the power of the Semester Upstream experience came from the fact that on every dimension, the project and the management of the project felt real and authentic. In other words, it didn’t feel like school, like they were being asked to do something in order to learn it. Instead, it seems that they felt like they were joining a team to address a real problem and tell and important story.
+<br><br>
 
 The project didn’t emerge from an impulse to cover content or transmit information. It didn’t come from a desire to teach the kids about a certain idea. It came from Mike and Brian’s genuine concern for the Colorado River. They wanted to get a story about the river to the public and it just so happened that they were working with a group of young people to make a film about this story. 
+<br><br>
 
 When listening to participants in the program, it’s clear that much of their motivation and enthusiasm film comes for the fact that they “made a professional film.” From conversations, it seems that there are many things that made it feel like they were working on a “professional” film — the fact that they opted into the project and chose their roles, the need from which the project emerged,  trust put in them by adults to manage themselves and their time, the real tools they used and thus the quality of the footage they got, etc.
+<br><br>
 
 
-Choice and Consent
+<h3>Choice and Consent</h3>
 Electing to be in the program
-One thing that was crucial to the success of Semester Upstream was that, like a club or team, for one reason or another, the young people who were there had chosen to be there. Most of them expressed interest in being in the program because they wanted to do something outside their comfort zone, they were excited about working with Mike and Brian, and because they thought it would be cool to go camping. There were very few students who opted in because they wanted to make a movie or because they knew about the Colorado river. However, the fact that they opted in instead of being assigned to it, changed the social contract they had with each other and with the adults. Choosing to be there meant, on some level, that they, not the teachers, were responsible for how they showed up as a team member.
+One thing that was crucial to the success of Semester Upstream was that, like a club or team, for one reason or another, the young people who were there had chosen to be there. Most of them expressed interest in being in the program because they wanted to do something outside their comfort zone, they were excited about working with Mike and Brian, and because they thought it would be cool to go camping. There were very few students who opted in because they wanted to make a movie or because they knew about the Colorado river. However, the fact that they opted in instead of being assigned to it, changed the social contract they had with each other and with the adults. Choosing to be there meant, on some level, that they, not the teachers, were responsible for how they showed up as a team member.<br><br>
 
-Choosing their Role
+
+<h3>Choosing their Role</h3>
 In addition to opting into the program, although they were often encouraged to do roles that Brian and Mike thought would push them, young people in Semester Upstream got to choose their role, whether it be directing, editing, music-making, or handling logistics. Because they chose a role that related to something that they wanted to get good at, that was connected to things they care about, and which pushed them out of their comfort zones, they invested a lot of time and energy into getting better at their roles and developing their skills. Many of the students have continued to do creative work connected to what they did during Semester Upstream.
+<br><br>
 
-TKInsert Omari
+<!-- TKInsert Omari
+<br><br> -->
 
-TK Insert Sondre
+<!-- TK Insert Sondre
+<br><br> -->
 
-
-
-Adults as Mentors rather than Teachers
+<h3>Adults as Mentors rather than Teachers</h3>
 Many of the students’ social contract with Brian and Mike stemmed not from authority but from real sense of mutual respect. Many had had pre-existing relationships to Brian and Mike, from previous classes, from being on teams they’ve coached, or being part of clubs they ran. From the way they talk about them, it’s clear that they think of Brian and Mike more as friends than as authority figures. These connections with Brian and Mike meant not only that the students wanted to work with them to make something great, but that Brian and Mike had a foundational trust and a better sense of how to match-make people with ideas and activities they care about, and it meant that when Brian and Mike suggested something or asked for something, the students were willing to trust Brian and Mike and trust the confidence they put  them to push themselves to do something hard, something outside of their comfort zones.
+<br><br>
 
-An authentically high standard of quality emerging from the project and relationships 
-
+<h3>An authentically high standard of quality emerging from the project and relationships </h3>
 Because they saw this project as a “professional movie” instead of a class project, the end product had to actually be something that people thought was good to watch. Something that was informative and cool to look at and listen to. This resulted in a much higher production value than if the standard of quality was oriented around a grade.
-
+<br><br>
 Furthermore, having interdependent roles in making the film set a high standard of quality. There were authentic social costs to doing a bad job because if your job is to handle the logistics and you messed up arranging a certain interview, you let your peers down.
-
-Power
+<br><br>
+<h3>Power</h3>
 Historically, teenagers and young people in their early twenties have been some of the greatest activists. They often have an honest and strong sense of justice and want to fight for an important cause that resonates with them. They’re passionate and are up for putting their skin in the game. Adults, who have become more resigned or more immersed in “why things are complicated,” often have less of an impulse to challenge authority and challenge power structures.
-
+<br><br>
 Semester Upstream put young people in contact with the power that comes from fighting for a cause. Many of the young people connected deeply, on an existential and moral level to exposing and challenging an injustice in the world.
+<br><br>
+<!-- TKInsert Olivia
+<br><br> -->
 
-TKInsert Olivia
-
-
-Real tools not school tools
+<h3>Real tools not school tools</h3>
 The teachers running Semester Upstream had previously founded a non-profit called Blue Dot Education. Through this organization, they had bought real tools (as opposed to schools tools) that the kids could use to make their film — DSLR cameras, drones, film editing software, etc. Using these tools was central to the program’s success not only because it made it possible for the kids to get great shots. It was also semiotically important because showed students that their creative work was being taken seriously. Often, when talking to young people about their experiences in the program, they’ll mention that they made a “professional film.”  They often describe how learning to use these real technical tools made them feel confident and gave them a sense of being creative professionals making a documentary film, rather than students doing a class project.
-
+<br><br>
 
 Being able to show their work in a real, adult place
 With video platforms like Vimeo and Youtube, it’s very easy to put videos you make out in the real world for anyone to see. This has totally changed the consumption and culture around watching, making, and publishing short films. For the young people in Semester Upstream, Vimeo and YouTube are public, digital gathering places with a lot of cultural relevance to them. On these sites, their film can be watched over and over again by people out in the world. Displaying something they made in a public, adult place —on a public, widely used platform on the internet— means that what they made has a potentially real, lasting audience, and this made the stakes higher and made it increasingly feel that they were making something “real” and “professional.”
-
+<br><br>
 Pressure from each other and the world, not from teachers or grades
 The pressure young people experienced to get the film done came not from arbitrary time limits or grades, but from authentic limitations (e.g. only having once chance to shoot an interview or having a peer they respected waiting on them to finish editing their footage). 
-
+<br><br>
 Throughout their time in Semester Upstream, the students involved weren’t being graded. Instead they were showing their work to each other and giving each other critical feedback.
-
+<br><br>
 The fact that the pressure to get things done and to do them well came from time limits in the world and the desire to not let their peers down, meant that young people were much more authentically motivated to do good work.
-
-The Adult’s Previous experiences running these kinds of programs
+<br><br>
+<h3>The Adult’s Previous experiences running these kinds of programs</h3>
 Both Brian and Mike have years of prior experience running clubs and two week immersive courses the are not schoolish — they’re mixed age, immersive, they’re not about content transmission but rather about sharing their authentic passions and inviting young people do more work that’s meaningful to them and connected to their identities. For instance, during High Tech High’s two-week long intersession, Mike ran Backpack San Diego, a backpacking trip where kids camped in people’s backyards and in different neighborhoods and Sa San Diego in a new way. He also ran Floatopia, a camping trip where kids would built floatation devices and then used them, over the course of two weeks, to float down the Colorado river.
-
+<br><br>
  Brian ran the High Tech High Astronomy Club where he took mixed age groups of young people camping to photograph the stars. Through the High Tech High Astronomy Club, he learned how to use telescopes and cameras with young people, and launched rockets and weather balloons. Here are some videos that document student’s experiences connected to the HTH Astronomy Club. 
-
-“Swiss Army Knife” Certification
+<br><br>
+<h3>“Swiss Army Knife” Certification</h3>
 Mike and Brian each have several single-subject credentials. Together, they could, in terms of compliance with the state, “cover” many different subjects including chemistry, physics, math, art, English, and history. This meant that they could be complying with the state as they ran an integrated, immersive program. 
 
 
@@ -181,5 +228,21 @@ Mike and Brian each have several single-subject credentials. Together, they coul
 </div>
 
 </div>
-
 </section>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
