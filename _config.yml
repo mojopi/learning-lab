@@ -9,7 +9,7 @@
 title: Learning Lab
 email: molly.josephs@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-baseurl: "/learning-lab/" # the subpath of your site, e.g. /blog
+baseurl: "/learning-lab" # the subpath of your site, e.g. /blog
 url: "mojopi.github.io/learning-lab" # the base hostname & protocol for your site
 revealurl: "https://mojopi.github.io/learning-lab/reveal"
 twitter_username: 
